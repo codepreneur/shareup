@@ -30,6 +30,24 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'uuidtools'
+gem 'paperclip', github: 'thoughtbot/paperclip'
+gem 'aws-sdk'
+gem 'bootstrap-sass'
+gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'websocket-rails'
+gem 'thin'
+
+
+group :test, :development do
+	gem 'rspec-rails'
+	gem 'capybara'
+	gem 'database_cleaner'
+end
+
+group :production do
+  gem 'rails_12factor'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
