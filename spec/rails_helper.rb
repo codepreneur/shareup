@@ -3,8 +3,8 @@ ENV["RAILS_ENV"] ||= 'test'
 require 'spec_helper'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
-require 'capybara/poltergeist'
-require 'capybara/email/rspec'
+# require 'capybara/poltergeist'
+# require 'capybara/email/rspec'
 # Capybara.javascript_driver = :poltergeist
 
 # Capybara.server do |app, port|
