@@ -13,11 +13,13 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'uuidtools'
 
+
 gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk'
-gem 'bootstrap-sass'
+
 gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
 
 
 group :test, :development do

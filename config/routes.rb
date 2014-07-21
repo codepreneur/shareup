@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get '/', to: redirect('/')
+
   get '/dashboard' => 'welcome#dashboard'
   root to: 'welcome#index'
 
