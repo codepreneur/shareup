@@ -5,18 +5,16 @@ Rails.application.routes.draw do
   get '/dashboard' => 'welcome#dashboard'
   root to: 'welcome#index'
 
-  namespace :api do
-    resources :shares, except: [:new, :edit]
-  end
-
-  
 
   scope '/api' do
+
+    resources :shares
     
     devise_for :users,
       controllers: {
         omniauth_callbacks: "users/omniauth_callbacks",
-        registrations: "users/registrations"
+        registrations: "users/registrations",
+        sessions: "users/sessions"
       }
 
   end
